@@ -15,6 +15,7 @@ namespace PipelineApp
         {
             try
             {
+                // Sales order example
                 var pipelineContext = new SalesOrderPipelineContext()
                 {
                     StoreRepository = new StoreRepository(),
@@ -30,6 +31,7 @@ namespace PipelineApp
                 backbone.Execute(pipelineContext);
 
                 #region purchase
+                /* Purchase example
                 var purchasePipelineContext = new PurchaseContext()
                 {
                     StoreRepository = new StoreRepository(),
@@ -40,6 +42,7 @@ namespace PipelineApp
                 var backbonePurchase = new Backbone<PurchasePipelineEvent>(new List<Type>(){ typeof(PurchaseOrder), typeof(PurchaseSupplier) });
 
                 backbonePurchase.Execute(purchasePipelineContext);
+                */
                 #endregion
 
                 Console.ReadKey();
