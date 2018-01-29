@@ -13,9 +13,15 @@ namespace PipelineApp
         {
             events.ValidateCustomer += (context) =>
             {
-                context.Cancel = true;
-                context.message = "ValidateCustomer";
-                Console.WriteLine("ValidateCustomer");
+                try
+                {
+                    context.message = "ValidateCustomer";
+                    Console.WriteLine("ValidateCustomer");
+                }
+                catch (Exception)
+                {
+                    context.Cancel = true;
+                }
             };
         }
     }

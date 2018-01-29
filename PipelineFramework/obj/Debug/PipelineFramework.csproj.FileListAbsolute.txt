@@ -1,0 +1,5 @@
+D:\program\2018\PipelineFramework\PipelineFramework\bin\Debug\PipelineFramework.dll
+D:\program\2018\PipelineFramework\PipelineFramework\bin\Debug\PipelineFramework.pdb
+D:\program\2018\PipelineFramework\PipelineFramework\obj\Debug\PipelineFramework.csprojResolveAssemblyReference.cache
+D:\program\2018\PipelineFramework\PipelineFramework\obj\Debug\PipelineFramework.dll
+D:\program\2018\PipelineFramework\PipelineFramework\obj\Debug\PipelineFramework.pdb

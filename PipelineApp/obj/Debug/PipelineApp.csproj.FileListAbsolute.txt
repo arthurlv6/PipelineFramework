@@ -1,0 +1,8 @@
+D:\program\2018\PipelineFramework\PipelineApp\obj\Debug\PipelineApp.csprojResolveAssemblyReference.cache
+D:\program\2018\PipelineFramework\PipelineApp\obj\Debug\PipelineApp.exe
+D:\program\2018\PipelineFramework\PipelineApp\obj\Debug\PipelineApp.pdb
+D:\program\2018\PipelineFramework\PipelineApp\bin\Debug\PipelineApp.exe.config
+D:\program\2018\PipelineFramework\PipelineApp\bin\Debug\PipelineApp.exe
+D:\program\2018\PipelineFramework\PipelineApp\bin\Debug\PipelineApp.pdb
+D:\program\2018\PipelineFramework\PipelineApp\bin\Debug\PipelineFramework.dll
+D:\program\2018\PipelineFramework\PipelineApp\bin\Debug\PipelineFramework.pdb

@@ -1,17 +1,20 @@
 ﻿
+using PipelineApp.Purchases;
+using PipelineApp.Purchases.Modules;
 using PipelineFramework;
+using System;
 
 namespace PipelineApp
 {
-    class PurchaseSupplier : IPurchase
+    class PurchaseSupplier : PipelineModule<PurchasePipelineEvent>
     {
-        public void Initialize(PipelineEvent events)
+        public override void Initialize(PurchasePipelineEvent events)
         {
-            //events.AdjustInventory += (context) =>
-            //{
-            //    Console.WriteLine("purchase inventory");
-            //};
+            events.ValidateSupplier += (context) =>
+            {
+                context.message = "Validate Supplier";
+                Console.WriteLine("Validate Supplier");
+            };
         }
-
     }
 }

@@ -1,6 +1,9 @@
 ﻿
+using PipelineApp.Purchases;
+using PipelineApp.Purchases.Modules;
 using PipelineFramework;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
@@ -25,6 +28,19 @@ namespace PipelineApp
                 var backbone =new Backbone<SalesOrderPipelineEvent>(modules);
 
                 backbone.Execute(pipelineContext);
+
+                #region purchase
+                var purchasePipelineContext = new PurchaseContext()
+                {
+                    StoreRepository = new StoreRepository(),
+                    PaymentProcessor = new PaymentProcessor(),
+                };
+
+
+                var backbonePurchase = new Backbone<PurchasePipelineEvent>(new List<Type>(){ typeof(PurchaseOrder), typeof(PurchaseSupplier) });
+
+                backbonePurchase.Execute(purchasePipelineContext);
+                #endregion
 
                 Console.ReadKey();
             }
