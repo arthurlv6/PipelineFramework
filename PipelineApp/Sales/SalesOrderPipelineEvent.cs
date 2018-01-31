@@ -10,10 +10,10 @@ namespace PipelineApp
     public class SalesOrderPipelineEvent:PipelineEvent
     {
         [PipelineEvent(Order = 0, TransactionScopeOption = TransactionScopeOption.Required)]
-        public PipelineDelegate<SalesOrderPipelineContext> ValidateCustomer { get; set; }
+        public Action<SalesOrderPipelineContext> ValidateCustomer { get; set; }
 
         [PipelineEvent(Order = 1, TransactionScopeOption = TransactionScopeOption.Required)]
-        public PipelineDelegate<SalesOrderPipelineContext> AdjustInventory { get; set; }
+        public Action<SalesOrderPipelineContext> AdjustInventory { get; set; }
 
     }
 }

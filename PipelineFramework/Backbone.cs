@@ -50,7 +50,7 @@ namespace PipelineFramework
                             GetTransactionScopeOption(attr.TransactionScopeOption);
 
                         object value = property.GetValue(PipelineEvent, null);
-                        PipelineDelegate<C> eventProp = (PipelineDelegate<C>)value;
+                        Action<C> eventProp = (Action<C>)value;
 
                         if (eventProp != null)
                         {

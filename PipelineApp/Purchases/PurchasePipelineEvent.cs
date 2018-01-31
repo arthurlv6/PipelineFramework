@@ -10,10 +10,10 @@ namespace PipelineApp.Purchases
     public class PurchasePipelineEvent : PipelineEvent
     {
         [PipelineEvent(Order = 0, TransactionScopeOption = TransactionScopeOption.Required)]
-        public PipelineDelegate<PurchaseContext> ValidateSupplier { get; set; }
+        public Action<PurchaseContext> ValidateSupplier { get; set; }
 
         [PipelineEvent(Order = 1, TransactionScopeOption = TransactionScopeOption.Required)]
-        public PipelineDelegate<PurchaseContext> CreatePurchaseOrder { get; set; }
+        public Action<PurchaseContext> CreatePurchaseOrder { get; set; }
 
     }
 }

@@ -46,7 +46,6 @@
     <Compile Include="PipelineEvent.cs" />
     <Compile Include="PipelineEventAttribute.cs" />
     <Compile Include="PipelineModule.cs" />
-    <Compile Include="PiplelineDelegate.cs" />
     <Compile Include="PropertyComparer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TransactionScopeOption.cs" />
